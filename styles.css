@@ -1,0 +1,201 @@
+body {
+        font-family: 'Georgia', serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://zupimages.net/up/25/01/k53n.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #eaeaea;
+        animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+        color: #c62828;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 5px black;
+        animation: slideIn 1s ease-out;
+    }
+
+    .commands-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        animation: slideIn 1s ease-out;
+    }
+
+    .column {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #c62828;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        opacity: 0;
+        animation: fadeInColumn 1s ease-out forwards;
+    }
+
+    .column h2 {
+        text-align: center;
+        color: #fdd835;
+        margin-bottom: 20px;
+    }
+
+    .command {
+        position: relative;
+        margin-bottom: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .command:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.02);
+    }
+
+    .command-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        border-radius: 50%;
+        border: 2px solid #c62828;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: bounce 1s infinite;
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+
+    .command-name {
+        font-weight: bold;
+        color: #fdd835;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .description {
+        display: block;
+        font-size: 0.9em;
+        color: #bdbdbd;
+    }
+
+    .details {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #c62828;
+        border-radius: 5px;
+        color: #eaeaea;
+        animation: slideInDetails 0.5s ease-out forwards;
+    }
+
+    /* Nouveaux styles pour l'index et les sections */
+    .index-nav {
+        text-align: center;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #c62828;
+        border-radius: 8px;
+        padding: 15px;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .index-nav a {
+        color: #fdd835;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 5px 10px;
+        border: 1px solid #c62828;
+        border-radius: 4px;
+        display: inline-block;
+        transition: all 0.3s;
+    }
+
+    .index-nav a:hover {
+        background-color: rgba(198, 40, 40, 0.3);
+        transform: scale(1.1);
+    }
+
+    .letter-section {
+        display: none;
+        animation: slideInDetails 0.5s ease-out forwards;
+    }
+
+    .letter-section.active {
+        display: block;
+    }
+
+    .letter-header {
+        cursor: pointer;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: rgba(198, 40, 40, 0.2);
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .letter-header:hover {
+        background-color: rgba(198, 40, 40, 0.4);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
+
+    @keyframes fadeInColumn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+
+    @keyframes slideInDetails {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .commands-container {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
