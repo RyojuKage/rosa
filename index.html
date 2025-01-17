@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des commandes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Liste des commandes</h1>
+
+    <nav class="index-nav">
+        <a href="#membres">Commandes Membres</a>
+        <a href="#admin">Commandes Administratives</a>
+    </nav>
+
+    <div class="commands-container">
+        <div class="column" id="membres">
+            <h2>Commandes Membres</h2>
+            
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#A</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/avatar</span>
+                            <span class="description">Affiche l'avatar d'un membre.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Dans cette famille, l'apparence a son importance, et ton avatar peut en dire beaucoup sur ta position, ta personnalité et ton rôle.<br /><br />
+                        Que tu sois un membre respecté ou un novice, image en dit long.<br /><br />
+                        Utilise cette commande pour observer, juger, ou simplement te rappeler à qui tu as
+                        affaire.<br /><br />
+                        Mais n'oublie pas, dans notre monde, chaque détail compte, même celui qui se cache derrière un simple avatar.
+                    </div>
+                </div>
+            </div>
+
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#B</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/banniere</span>
+                            <span class="description">Affiche la bannière d'un membre.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        La bannière en dit long sur sa loyauté et ses aspirations. Tu peux réveler l'âme de l'individu :<br />
+                        son passé, ses ambitions ou peut-être son ultime faiblesse. Un privilège réservé aux initiés.
+                    </div>
+                </div>
+            </div>
+
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#C</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/confession</span>
+                            <span class="description">Envoyer une confession anonyme..</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Chaque individu a des désirs inavoués ou des remords à partager.<br /><br />
+                        Tu peux de poster une confession anonyme, offrant une soupape à tes émotions les plus intenses, tout en restant dans l’ombre.<br />
+                        Le Don vous observe, mais ne juge pas… ouvertement. Et repecter les lois.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/channelInfo</span>
+                            <span class="description">Affiche le nombre de salons et de catégories du serveur.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Comme tout bon stratège, tu dois connaître ton territoire. dresses un rapport complet sur le nombre de salons et de catégories.<br /><br />
+                        Un Don préparé est un Don victorieux.
+                    </div>
+                </div>
+            </div>
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#I</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/info</span>
+                            <span class="description">Affiche la liste de toutes les commandes disponibles</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Tu peux voir l'ensemble des commandes disponibles. Un Don qui ne partage pas ses régles ne peut attendre de la discipline.<br /><br />
+                        Explore les possibilités offertes, mais n'oubliez jamais qui tient les rênes.
+                    </div>
+                </div>
+            </div>
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#P</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/ping</span>
+                            <span class="description">Voir le ping du bot</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Tu te demandes si le Don est disponible pour intervenir ?<br />
+                        Sache que le rôle du Don est d’être attentif aux besoins de la famille et de veiller à ce que tout fonctionne comme prévu.<br /><br />
+                        Un bon membre sait repérer les moments où le Don est prêt à agir ou s’il est préférable de gérer une situation en autonomie. La famille, après tout, repose sur la coopération et le respect de chacun.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="commands-container">
+        <div class="column" id="admin">
+            <h2>Commandes Administratives</h2>
+            
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#A</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('18.jpeg');"></div>
+                        <div class="content">
+                            <span class="command-name">/age</span>
+                            <span class="description">Choisis ton rôle d'âge et montre à la famille où tu te situes dans les rangs.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Écoute-moi bien, ragazzo.<br /><br />Cette commande te permets de prends ton rôle selon ton âge.<br /><br />
+                        C'est pas juste un chiffre, c'est ta place dans la famille.<br /><br />
+                        Alors, fais-le bien et montre à tous qui tu es vraiment.
+                    </div>
+                </div>
+
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/ajout</span>
+                            <span class="description">Donne à un membre ses rôles pour intégrer pleinement la famille.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        C'est pour les admins, les vrais. Nous te donnons les clés pour entrer dans notre monde.<br /><br />
+                        Premier rôle, tu prends ses marques, tu apprends les règles.<br />
+                        Deuxième rôle, tu deviens certifié, un vrai de vrai.<br /><br />
+                        Fais ça bien, on ne laisse entrer que ceux en qui on a confiance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#B</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/banAno</span>
+                            <span class="description">Bloquer un utilisateur des confessions anonymes en utilisant un jeton.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        C'est pour les admins, les vrais.<br />
+                        Si tu crois pouvoir faire des conneries sous couvert d'anonymat, sache que tu n'es pas à l'abri des conséquences.<br /><br />
+                        Si tu franchis la ligne, tu pourrais te retrouver banni des confessions anonymes, et une fois banni, tu ne pourras plus jamais y participer.<br /><br />
+                        Ce n'est pas un jeu, c'est une règle sacrée, respecte cet espace, ou tu risques de perdre ta place parmi nous.<br /><br />
+                        Sois sage, ou tu regretteras de t'être cru invisible.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/ban_id</span>
+                            <span class="description">Ban un membre en utilisant son identifiant (ID), même s'il n'est pas sur le serveur.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Si tu crois pouvoir t'échapper de la justice en étant hors du serveur, tu te trompes lourdement.<br /><br />
+                        Avec cette commande, même si tu n'es pas là, ton identifiant peut être pris en chasse. Si tu as franchi une ligne, peu importe où tu te caches, tu seras banni.<br /><br />
+                        Tu ne peux pas fuir la justice de la famille. Respecte les règles, ou prépare-toi à en payer le prix.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/ban</span>
+                            <span class="description">Ban un membre en l'affichant sur le serveur</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Mon cher, il arrive un moment où un membre trahit notre confiance ou ne respecte pas les règles sacrées de la Famille.<br /><br />
+                        Dans ce cas, il faut donner l'exemple en annonçant publiquement sa faute. Que cela serve d'exemple à tous ceux qui oseraient défier notre autorité.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('brat.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/bdsm</span>
+                            <span class="description">Ban un membre en l'affichant sur le serveur</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        viens explorer les plaisirs de la vie, mais souvens-toi que chaque choix vient avec ses chaînes… ou son fouet.<br /><br />
+                        Tu peux seléctionner tes rôles BDSM parmi une liste d’options délicieusement variées. Le Don apprécie l’honnêuté.
+                    </div>
+                </div>
+            </div>
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#C</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/clear</span>
+                            <span class="description">Supprime un certain nombre de messages dans le salon.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Quand les murs se couvrent de trop de discussions, de mots ou autre il est temps de les purger.<br /><br />
+                        Le silence peut être aussi réconfortant qu'une lanière de cuir bien tendue.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/cleardatabase</span>
+                            <span class="description">Réinitialise la base de données en supprimant toutes les données d'XP.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Il y a des moments où il faut repartir à zéro. Cette commande efface toutes les données d’XP accumulées.<br /><br />
+                        Seuls les plus forts retrouveront leur place au sommet, car c’est ainsi que la hiérarchie s’impose.
+                    </div>
+                </div>
+            </div>
+            <div class="letter-header" onclick="toggleLetterSection(this)">
+                <h2>#D</h2>
+            </div>
+            <div class="letter-section">
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/deletegif</span>
+                            <span class="description">Supprime les gifs des vocaux à un membre.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Un excès de spectacle peut parfois déranger. Avec cette commande, vous pouvez retirer les gifs d’entrée et de sortie des salons vocaux.<br /><br />
+                        Le Don aime l’efficacité sans distraction inutile.
+                    </div>
+                </div>
+                <div class="command" onclick="toggleDetails(this)">
+                    <div class="command-header">
+                        <div class="icon" style="background-image: url('bot.png');"></div>
+                        <div class="content">
+                            <span class="command-name">/deletegif</span>
+                            <span class="description">Supprime les gifs des vocaux à un membre.</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Un excès de spectacle peut parfois déranger. Avec cette commande, vous pouvez retirer les gifs d’entrée et de sortie des salons vocaux.<br /><br />
+                        Le Don aime l’efficacité sans distraction inutile.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let openDetails = null;
+        let openLetterSection = null;
+
+        function toggleDetails(commandElement) {
+            const details = commandElement.querySelector('.details');
+
+            if (openDetails && openDetails !== details) {
+                openDetails.style.display = 'none';
+            }
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                openDetails = null;
+            } else {
+                details.style.display = 'block';
+                openDetails = details;
+            }
+        }
+
+        function toggleLetterSection(headerElement) {
+            const section = headerElement.nextElementSibling;
+
+            if (openLetterSection && openLetterSection !== section) {
+                openLetterSection.classList.remove('active');
+            }
+
+            if (section.classList.contains('active')) {
+                section.classList.remove('active');
+                openLetterSection = null;
+            } else {
+                section.classList.add('active');
+                openLetterSection = section;
+            }
+        }
+
+        // Navigation smooth scroll
+        document.querySelectorAll('.index-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
